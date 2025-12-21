@@ -24,7 +24,6 @@ font-family:verdana
   gap: 5px;
 }
 .container div {
-  background-color: #f1f1f1;
   color: #000;
   padding: 10px;
   font-size: 16px;
@@ -35,82 +34,119 @@ font-family:verdana
   width: 320px;
 }
 
+details {
+  font-family:verdana  
+}
+
+summary {
+  font-weight: bold;
+  background-color:Tomato;
+  font-family:verdana
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+}
+
+details[open] {
+  background-color:WhiteSmoke;
+  margin-bottom: 10px;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #aaaaaa;
+  margin-bottom: 0.5em;
+  
+}
 
 </style>
 
 <h1>Physics Simulations</h1>
-<h2>P2 - Forces</h2>
 
-<div class="container">
-  <div><a href="/car_forces/index.html"><img src="sim_icons/car_forces.png" class="icons"><br>Forces on a car, acceleration and top speed</a></div>
-  <div><a href="/stopping/index.html"><img src="sim_icons/ph.png" class="icons"><br>Stopping distance game</a></div>
-  <div><a href="/skydiver/index.html"><img src="sim_icons/ph.png" class="icons"><br>Skydiving and terminal velocity</a></div>  
-</div>
-
-<h2>P3 - Energy</h2>
-
-<div class="container">
-  <div><a href="https://phet.colorado.edu/en/simulations/energy-skate-park"><img src="sim_icons/phet.png" class="icons"><br>Energy Skate Park (external - PhET)</a></div>
-  <div><a href="https://phet.colorado.edu/en/simulations/pendulum-lab"><img src="sim_icons/phet.png" class="icons"><br>Pendulum Lab (external - PhET)</a></div>
-</div>
-
-<h2>P4 - Waves</h2>
-<div class="container">
-  <div><a href="/waves/index.html"><img src="sim_icons/ph.png" class="icons"><br>Wave viewer</a></div>
-</div>
-
-<h2>P5 - Light and EM Spectrum</h2>
-<div class="container">
-  <div><a href="/heating_cooling/index.html"><img src="sim_icons/ph.png" class="icons"><br>Heating, cooling and the effect of colour</a></div>
-</div>
-
-<h2>P6 - Radioactivity</h2>
-
-<div class="container">
-  <div><a href="/geiger/index.html"><img src="sim_icons/ph.png" class="icons"><br>Geiger counters and measurement including background</a></div>
-  <div><a href="/rad_penetration/index.html"><img src="sim_icons/ph.png" class="icons"><br>Penetration of different types of radiation</a></div>
-  <div><a href="/rutherford/index.html"><img src="sim_icons/ph.png" class="icons"><br>Rutherford Scattering Experiment</a></div>
-  <div><a href="/electron_excitation/index.html"><img src="sim_icons/ph.png" class="icons"><br>Electron Excitation</a></div>
-  <div><a href="/halflife/index.html"><img src="sim_icons/ph.png" class="icons"><br>Half-life</a></div>
-  <div><a href="/fission_reactor/index.html"><img src="sim_icons/ph.png" class="icons"><br>Fission reactor</a></div>
-  <div><a href="/fusion_reactor/index.html"><img src="sim_icons/ph.png" class="icons"><br>Fusion reaction conditions</a></div>
-  <div><a href="https://phet.colorado.edu/en/simulations/build-a-nucleus"><img src="sim_icons/phet.png" class="icons"><br>Build a Nucleus (external - PhET)</a></div>
-</div>
-
-<h2>P7 - Astronomy</h2>
-
-<div class="container">
-  <div><a href="/doppler/index.html"><img src="sim_icons/ph.png" class="icons"><br>Doppler Effect</a></div>
-  <div><a href="/red_shift/index.html"><img src="sim_icons/ph.png" class="icons"><br>Red and Blue Shift</a></div>
-  <div><a href="/newtons_cannon/index.html"><img src="sim_icons/ph.png" class="icons"><br>Newton's Cannon</a></div>
-</div>
+<details open = "true">
+  <summary>P2 - Forces</summary>
+	<div class="container">
+		<div><a href="/car_forces/index.html"><img src="sim_icons/car_forces.png" class="icons"><br>Forces on a car, acceleration and top speed</a></div>
+		<div><a href="/stopping/index.html"><img src="sim_icons/ph.png" class="icons"><br>Stopping distance game</a></div>
+		<div><a href="/skydiver/index.html"><img src="sim_icons/ph.png" class="icons"><br>Skydiving and terminal velocity</a></div>  
+	</div>
+</details>
 
 
-<h2>P11 - Static Electricity</h2>
+<details open = "true">
+  <summary>P3 - Energy</summary>
+	<div class="container">
+	  <div><a href="https://phet.colorado.edu/en/simulations/energy-skate-park"><img src="sim_icons/phet.png" class="icons"><br>Energy Skate Park (external - PhET)</a></div>
+	  <div><a href="https://phet.colorado.edu/en/simulations/pendulum-lab"><img src="sim_icons/phet.png" class="icons"><br>Pendulum Lab (external - PhET)</a></div>
+	</div>
+</details>
 
-<div class="container">
-  <div><a href="/electric_fields/index.html"><img src="sim_icons/ph.png" class="icons"><br>Electric Fields</a></div>
-</div>
 
-<h2>P12 - Magnetism and Motor Effect</h2>
+<details open = "true">
+  <summary>P4 - Waves</summary>
+	<div class="container">
+	  <div><a href="/waves/index.html"><img src="sim_icons/ph.png" class="icons"><br>Wave viewer</a></div>
+	</div>
+</details>
 
-<div class="container">
-  <div><a href="/magnetic_fields/index.html"><img src="sim_icons/ph.png" class="icons"><br>Magnetic Fields</a></div>
-  <div><a href="https://javalab.org/en/dc_motor_en/"><img src="sim_icons/ph.png" class="icons"><br>Motor (external - Javalab)</a></div>
-</div>
 
-<h2>P13 - Electromagnetic Induction</h2>
+<details open = "true">
+  <summary>P5 - Light and the EM Spectrum</summary>
+	<div class="container">
+	  <div><a href="/heating_cooling/index.html"><img src="sim_icons/ph.png" class="icons"><br>Heating, cooling and the effect of colour</a></div>
+	</div>
+</details>
 
+<details open = "true">
+  <summary>P6 - Radioactivity</summary>
+	<div class="container">
+	  <div><a href="/geiger/index.html"><img src="sim_icons/ph.png" class="icons"><br>Geiger counters and measurement including background</a></div>
+	  <div><a href="/rad_penetration/index.html"><img src="sim_icons/ph.png" class="icons"><br>Penetration of different types of radiation</a></div>
+	  <div><a href="/rutherford/index.html"><img src="sim_icons/ph.png" class="icons"><br>Rutherford Scattering Experiment</a></div>
+	  <div><a href="/electron_excitation/index.html"><img src="sim_icons/ph.png" class="icons"><br>Electron Excitation</a></div>
+	  <div><a href="/halflife/index.html"><img src="sim_icons/ph.png" class="icons"><br>Half-life</a></div>
+	  <div><a href="/fission_reactor/index.html"><img src="sim_icons/ph.png" class="icons"><br>Fission reactor</a></div>
+	  <div><a href="/fusion_reactor/index.html"><img src="sim_icons/ph.png" class="icons"><br>Fusion reaction conditions</a></div>
+	  <div><a href="https://phet.colorado.edu/en/simulations/build-a-nucleus"><img src="sim_icons/phet.png" class="icons"><br>Build a Nucleus (external - PhET)</a></div>
+	</div>
+</details>
+
+<details open = "true">
+  <summary>P7 - Astronomy</summary>
+	<div class="container">
+	  <div><a href="/doppler/index.html"><img src="sim_icons/ph.png" class="icons"><br>Doppler Effect</a></div>
+	  <div><a href="/red_shift/index.html"><img src="sim_icons/ph.png" class="icons"><br>Red and Blue Shift</a></div>
+	  <div><a href="/newtons_cannon/index.html"><img src="sim_icons/ph.png" class="icons"><br>Newton's Cannon</a></div>
+	</div>
+</details>
+
+<details open = "true">
+  <summary>P11 - Static Electricity</summary>
+	<div class="container">
+	  <div><a href="/electric_fields/index.html"><img src="sim_icons/ph.png" class="icons"><br>Electric Fields</a></div>
+	</div>
+</details>
+
+<details open = "true">
+  <summary>P12 - Magnetism</summary>
+	<div class="container">
+	  <div><a href="/magnetic_fields/index.html"><img src="sim_icons/ph.png" class="icons"><br>Magnetic Fields</a></div>
+	  <div><a href="https://javalab.org/en/dc_motor_en/"><img src="sim_icons/ph.png" class="icons"><br>Motor (external - Javalab)</a></div>
+	</div>
+</details>
+
+<details open = "true">
+  <summary>P13 - Electromagnetic Induction</summary>
 <div class="container">
   <div><a href="/speakers/index.html"><img src="sim_icons/ph.png" class="icons"><br>How a simple speaker works</a></div>
 </div>
+</details>
 
-<h2>P14 - The Particle Model</h2>
-
-<div class="container">
-  <div><a href="/gas_pressure/index.html"><img src="sim_icons/ph.png" class="icons"><br>Pressure of gas in a container</a></div>
-  <div><a href="/shc_analogy/index.html"><img src="sim_icons/ph.png" class="icons"><br>Specific heat capacity - measuring cylinder analogy</a></div>
-</div>
+<details open = "true">
+  <summary>P14 - The Particle Model</summary>
+	<div class="container">
+	  <div><a href="/gas_pressure/index.html"><img src="sim_icons/ph.png" class="icons"><br>Pressure of gas in a container</a></div>
+	  <div><a href="/shc_analogy/index.html"><img src="sim_icons/ph.png" class="icons"><br>Specific heat capacity - measuring cylinder analogy</a></div>
+	</div>
+</details>
 
 </body>
 </html>
