@@ -16,15 +16,40 @@ h2 {
 background-color:Tomato;
 font-family:verdana
 }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 5px;
+  gap: 5px;
+}
+.container div {
+  background-color: #f1f1f1;
+  color: #000;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+.icons {
+  height: 180px;
+  width: 320px;
+}
+
+
 </style>
 
 <h1>Physics Simulations</h1>
 <h2>P2 - Forces</h2>
-<a href="/car_forces/index.html">Forces on a car, acceleration and top speed</a>
-<br>
-<a href="/stopping/index.html">Stopping distance game</a>
-<br>
-<a href="/skydiver/index.html">Skydiving and terminal velocity</a>
+
+<div class="container">
+  <div><img src="sim_icons/car_forces.png" class="icons"><br><a href="/car_forces/index.html">Forces on a car, acceleration and top speed</a></div>
+  <div><img src="sim_icons/ph.png" class="icons"><br><a href="/stopping/index.html">Stopping distance game</a></div>
+  <div><img src="sim_icons/ph.png" class="icons"><br><a href="/skydiver/index.html">Skydiving and terminal velocity</a></div>  
+</div>
+
+
+
+
 
 <h2>P3 - Energy</h2>
 <a href="https://phet.colorado.edu/en/simulations/energy-skate-park">Energy skate park (external - PhET)</a>
