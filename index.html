@@ -59,7 +59,28 @@ details[open] summary {
 
 </style>
 
+<script>
+function open_details() {
+	document.body.querySelectorAll('details')
+	  .forEach((e) => {(e.hasAttribute('open')) ?
+		e.setAttribute('open',true) : e.setAttribute('open',true);
+		console.log(e.hasAttribute('open'))
+	  })
+}
+function close_details() {
+	document.body.querySelectorAll('details')
+	  .forEach((e) => {(e.hasAttribute('open')) ?
+		e.removeAttribute('open')  : e.removeAttribute('open') ;
+		console.log(e.hasAttribute('open'))
+	  })
+}
+</script>
+
 <h1>Physics Simulations</h1>
+
+
+<button onclick="open_details()">Expand all</button>
+<button onclick="close_details()">Collapse all</button>
 
 <details open = "true">
   <summary>P2 - Forces</summary>
