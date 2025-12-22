@@ -97,38 +97,17 @@
 			var w = window.innerWidth  
 			var h = window.innerHeight
 			const canvas3 = document.getElementById("canvas")
-			
 			if (w < h*1.7777777){
-				if (w < 1281) {
 				  canvas3.style.width = w*0.95+"px"
 				  canvas3.style.height = "auto"
-				} else {
-				  canvas3.style.width = "1280px"
-				  canvas3.style.height = "720px"
-				}
 			} else {
-				if (h < 721) {
 				  canvas3.style.width = h*1.77*0.95+"px"
 				  canvas3.style.height = "auto"
-				} else {
-				  canvas3.style.width = "1280px"
-				  canvas3.style.height = "720px"
-				}
 			}			
 		}
 	</script>    
 
-    <body onresize = resize_sim()>
-		<div class="header">
-		  <img src="../web_logo.png" alt="logo" />
-		  <h1>Virtual Physics</h1>
-
-		</div>
-		
-		<input type="button" onclick="location.href='../index.html';" value="Go back" />
-		<input type="button" onclick="location.href='fullscreen.html';" value="Fullscreen Sim" />
-		
-		<h2> Forces on a car</h2>
+    <body onresize = resize_sim() style = "background-color:Black">
         <div class="gm4html5_div_class" id="gm4html5_div_id">
             
             <!-- Builtin injector for splash screen -->
