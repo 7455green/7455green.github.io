@@ -17,7 +17,7 @@
         <meta http-equiv="pragma" content="no-cache"/>
 
         <!-- Set the title bar of the page -->
-        <title>Forces on a car</title>
+        <title>7455green car forces</title>
 
         <!-- Custom PreStyle code is injected here -->
         
@@ -28,8 +28,7 @@
                 background: #0;
                 color: #cccccc;
                 margin: 0px;
-                padding: 0px;                
-				margin-bottom: 60px;
+                padding: 0px;
                 border: 0px;
             }
 
@@ -92,43 +91,24 @@
     <!-- Custom PostHead code is injected here -->
     
 
-    <!-- Custom PreBody code is injected here -->
-    
+    <!-- Custom PreBody code is injected here --> 
 
-    <body onresize = resize_sim()>
-        <!-- Custom BodyStart code is injected here -->
-        <div class="header">
-		  <img src="../web_logo.png" alt="logo" />
-		  <h1>Virtual Physics</h1>
-		</div>
-		
-		<input type="button" class = "in_sim_button" onclick="location.href='../index.html';" value="Go back" />
-		<input type="button" class = "in_sim_button" onclick="location.href='fullscreen.html';" value="Fullscreen Sim" />
-		
-		<h2> Forces on a car</h2>
-
+    <body onresize = resize_sim_full() style = "background-color:Black">
         <div class="gm4html5_div_class" id="gm4html5_div_id">
             
             <!-- Builtin injector for splash screen -->
             
 
-            <!-- Custom PreCanvas code is injected here -->
-            
-
             <!-- Create the canvas element the game draws to -->
             <canvas id="canvas" width="1280" height="720" >
-                
                 <p>Your browser doesn't support HTML5 canvas.</p>
             </canvas>
-            
-            <!-- Custom PostCanvas code is injected here -->
-            
         </div>
 		
 		<script>
-		resize_sim()
+		resize_sim_full()
 		</script>
-
+		
         <!-- Run the game code -->
         <script type="text/javascript" src="html5game/Car forces.js?cachebust=1263888142"></script>
 
@@ -140,8 +120,6 @@
         <!-- Builtin injector for injecting google analytics code -->
         
 
-        <!-- Custom BodyEnd code is injected here -->
-        
     </body>
 
     <!-- Custom PostBody code is injected here -->
