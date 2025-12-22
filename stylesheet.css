@@ -69,6 +69,28 @@ body {
   width: 320px;
 }
 
+.in_sim_button {
+  background-color: Tomato;
+  color: Black;
+  font-size: 15px;
+  padding: 12px;
+  margin:5px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;	
+}
+
+.ex_col_button {
+  background-color: Tomato;
+  color: Black;
+  font-size: 15px;
+  padding: 12px;
+  margin:5px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;	
+}
+
 details {
   font-family:verdana;
   margin-top:5px
@@ -78,7 +100,8 @@ summary {
   font-weight: bold;
   font-family:verdana;
   padding: 0.5em;
-  background-color:Gainsboro
+  background-color:Gainsboro;
+  cursor: pointer;	
 }
 
 details[open] {
@@ -91,5 +114,6 @@ details[open] summary {
   border-bottom: 1px solid #aaaaaa;
   background-color:Tomato;
   margin-bottom: 0.5em;
+  cursor: pointer;	
   
 }
