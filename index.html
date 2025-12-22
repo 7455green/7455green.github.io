@@ -7,10 +7,10 @@ p {
 font-family:verdana
 }
 h1 {
-background-color:DodgerBlue;
 font-family:verdana;
-padding: 10px;
-text-align: center
+font-size: 50px;
+color: RoyalBlue;
+text-align: center;
 }
 a {
 font-family:verdana
@@ -18,7 +18,33 @@ font-family:verdana
 h2 {
 background-color:Tomato;
 font-family:verdana;
-padding: 5px
+padding: 5px;
+}
+
+.header {
+	background: White;
+	background: linear-gradient(0deg,SkyBlue 0%,White 50%, DodgerBlue 100%);
+	padding: 20px;
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.header > div {
+	width:50%
+}
+
+.header img {  
+  padding-left: 30%;
+  width: 150px;
+  height: 150px;
+  display: inline-block
+
+}
+
+.header h1 {
+	display: inline-block;
+	text-align: center;
+	padding-left: 10px
 }
 
 .container {
@@ -82,8 +108,11 @@ function close_details() {
 }
 </script>
 
-<h1>Virtual Physics</h1>
+<div class="header">
+  <img src="web_logo.png" alt="logo" />
+  <h1>Virtual Physics</h1>
 
+</div>
 
 <button onclick="open_details()">Expand all</button>
 <button onclick="close_details()">Collapse all</button>
