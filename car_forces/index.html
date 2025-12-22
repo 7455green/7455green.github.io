@@ -91,9 +91,19 @@
     
 
     <!-- Custom PreBody code is injected here -->
-    
 
-    <body>
+	<script>
+		function resize_sim() {
+			var w = window.innerWidth  
+			if (w < 1281) {
+			  document.getElementById("canvas").style.width = "95%"
+			} else {
+			  document.getElementById("canvas").style.width = "1280px"
+			}
+		}
+	</script>    
+
+    <body onresize = resize_sim()>
 		<div class="header">
 		  <img src="../web_logo.png" alt="logo" />
 		  <h1>Virtual Physics</h1>
@@ -110,7 +120,11 @@
                 <p>Your browser doesn't support HTML5 canvas.</p>
             </canvas>
         </div>
-
+		
+		<script>
+		resize_sim()
+		</script>
+		
         <!-- Run the game code -->
         <script type="text/javascript" src="html5game/car3.js?cachebust=1566689455"></script>
 
