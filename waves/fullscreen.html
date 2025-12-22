@@ -17,7 +17,7 @@
         <meta http-equiv="pragma" content="no-cache"/>
 
         <!-- Set the title bar of the page -->
-        <title>Heating and cooling</title>
+        <title>Waves</title>
 
         <!-- Custom PreStyle code is injected here -->
         
@@ -28,7 +28,6 @@
                 background: #0;
                 color: #cccccc;
                 margin: 0px;
-                margin-bottom: 60px;
                 padding: 0px;
                 border: 0px;
             }
@@ -92,19 +91,9 @@
     <!-- Custom PostHead code is injected here -->
     
 
-    <!-- Custom PreBody code is injected here -->
+    <!-- Custom PreBody code is injected here --> 
 
-    <body onresize = resize_sim()>
-		<div class="header">
-		  <img src="../web_logo.png" alt="logo" />
-		  <h1>Virtual Physics</h1>
-
-		</div>
-		
-		<input type="button" class = "in_sim_button" onclick="location.href='../index.html';" value="Go back" />
-		<input type="button" class = "in_sim_button" onclick="location.href='fullscreen.html';" value="Fullscreen Sim" />
-		
-		<h2> Heating and cooling</h2>
+    <body onresize = resize_sim_full() style = "background-color:Black">
         <div class="gm4html5_div_class" id="gm4html5_div_id">
             
             <!-- Builtin injector for splash screen -->
@@ -117,11 +106,11 @@
         </div>
 		
 		<script>
-		resize_sim()
+		resize_sim_full()
 		</script>
 		
         <!-- Run the game code -->
-        <script type="text/javascript" src="html5game/Heating and Cooling.js?cachebust=1577992036"></script>
+        <script type="text/javascript" src="html5game/Waves.js?cachebust=299601946"></script>
 
         <!-- Builtin injector for injecting runner path -->
         

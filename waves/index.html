@@ -5,6 +5,8 @@
     
 
     <head>
+		<link rel="stylesheet" href="../stylesheet.css">
+		<script src="../scripts.js"></script>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name ="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
@@ -15,7 +17,7 @@
         <meta http-equiv="pragma" content="no-cache"/>
 
         <!-- Set the title bar of the page -->
-        <title>7455green waves</title>
+        <title>Waves</title>
 
         <!-- Custom PreStyle code is injected here -->
         
@@ -26,6 +28,7 @@
                 background: #0;
                 color: #cccccc;
                 margin: 0px;
+                margin-bottom: 60px;
                 padding: 0px;
                 border: 0px;
             }
@@ -35,9 +38,12 @@
                 -webkit-interpolation-mode: nearest-neighbor;
                 -ms-touch-action: none;
                 touch-action: none;
-                margin: 0px;
+                margin: auto;
                 padding: 0px;
                 border: 0px;
+				width: auto;
+				text-align: center;
+				display:block;
             }
             :-webkit-full-screen #canvas {
                 width: 100%;
@@ -87,9 +93,18 @@
     
 
     <!-- Custom PreBody code is injected here -->
-    
 
-    <body>
+    <body onresize = resize_sim()>
+		<div class="header">
+		  <img src="../web_logo.png" alt="logo" />
+		  <h1>Virtual Physics</h1>
+
+		</div>
+		
+		<input type="button" class = "in_sim_button" onclick="location.href='../index.html';" value="Go back" />
+		<input type="button" class = "in_sim_button" onclick="location.href='fullscreen.html';" value="Fullscreen Sim" />
+		
+		<h2> Waves</h2>
         <div class="gm4html5_div_class" id="gm4html5_div_id">
             
             <!-- Builtin injector for splash screen -->
@@ -100,9 +115,13 @@
                 <p>Your browser doesn't support HTML5 canvas.</p>
             </canvas>
         </div>
-
+		
+		<script>
+		resize_sim()
+		</script>
+		
         <!-- Run the game code -->
-        <script type="text/javascript" src="html5game/wave3.js?cachebust=527632821"></script>
+        <script type="text/javascript" src="html5game/Waves.js?cachebust=299601946"></script>
 
         <!-- Builtin injector for injecting runner path -->
         
