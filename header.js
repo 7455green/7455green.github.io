@@ -2,7 +2,7 @@ let appHeader = `
     <nav>
         <div class="header">
 		  <img src="../web_logo.png" alt="logo" />
-		  <h1>Virtual Physics</h1>
+		  <h1>ViewPhysics</h1>
 		</div>
     </nav>
 `;
