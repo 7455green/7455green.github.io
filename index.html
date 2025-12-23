@@ -5,6 +5,8 @@
   <title>Virtual Physics</title>
   <link rel="icon" type="image/x-icon" href="web_logo.png">
   <link rel="stylesheet" href="stylesheet.css">
+  <script src="jquery.js"></script> 
+  <script> $("#includedContent").load("header.html"); </script> 
 </head>
 
 <body>
@@ -29,12 +31,12 @@ function close_details() {
 	  })
 }
 </script>
-
 <div class="header">
-  <img src="web_logo.png" alt="logo" />
+  <img src="../web_logo.png" alt="logo" />
   <h1>Virtual Physics</h1>
-
 </div>
+
+<div id="includedContent"></div>
 
 <button onclick="open_details()" class = "ex_col_button" >Expand all</button>
 <button onclick="close_details()" class = "ex_col_button" >Collapse all</button>
