@@ -35,11 +35,10 @@ body {
 }
 
 .header img { 
-  margin-left: 35%;
+  margin-left: 26%;
   position-anchor: --header;
-  width: 150px;
-  height: 150px;
-  aspect-ratio:1;
+  width: 50%;
+  height: auto;
   display: inline-block
 
 }

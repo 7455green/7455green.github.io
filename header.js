@@ -1,10 +1,7 @@
 let appHeader = `
     <nav>
         <div class="header">
-		  <img src="../web_logo.png" alt="logo" />
-		  <h1>ViewPhysics</h1>
-		  <br>
-		  <p>Physics simulations for education</p>
+		  <img src="../web_logo_text.png" alt="logo" />
 		</div>
     </nav>
 `;
