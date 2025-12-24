@@ -30,35 +30,32 @@ body {
 	background: White;
 	anchor-name: --header;
 	background: linear-gradient(0deg,SkyBlue 0%,White 50%, DodgerBlue 100%);
-	padding: 20px;
+	padding-top: 20px;
 	margin-bottom: 10px;
 }
 
 .header img { 
   margin-left: 35%;
   position-anchor: --header;
-  width: 10%;
-  height: auto;
+  width: 150px;
+  height: 150px;
   aspect-ratio:1;
-  vertical-align: text-bottom;
   display: inline-block
 
 }
 
 .header h1 {
-	position: absolute;
-	position-anchor: --header;
-	top: 8%;
-	left: 45%;
+	position: relative;
 	text-align: left;
-	margin: 0px
+	bottom: 70px;
+	margin: 0px;
+	display: inline-block
 }
 
 .header p {
-	position: absolute;
-	position-anchor: --header;
-	top: 14%;
-	left: 46%;
+	position: relative;
+	left: 45%;
+	bottom: 70px;
 	color: RoyalBlue;
 	margin: 0px
 }
