@@ -84,6 +84,9 @@ body {
   border-radius: 2px;
   cursor: pointer;	
 }
+.main_button:hover {
+  background-color: RoyalBlue;
+}
 
 .container {
   display: grid;
