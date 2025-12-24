@@ -63,6 +63,7 @@ body {
 
 .header_buttons {
 	background: SkyBlue;
+	background: linear-gradient(180deg,SkyBlue 0%, White 100%);
 	padding: 0px;
 	padding-bottom: 2px;
 	display: flex;
