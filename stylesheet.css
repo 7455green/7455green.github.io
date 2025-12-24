@@ -15,7 +15,8 @@ background-color:Tomato;
 color: Black;
 font-family:verdana;
 padding: 5px;
-margin: 5px;
+margin-top: 5px;
+margin-bottom: 5px;
 }
 
 body {
