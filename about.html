@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ViewPhysics</title>
+  <link rel="icon" type="image/x-icon" href="web_logo_icon.png">
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+
+<style>
+	
+</style>
+
+<script>
+function open_details() {
+	document.body.querySelectorAll('details')
+	  .forEach((e) => {(e.hasAttribute('open')) ?
+		e.setAttribute('open',true) : e.setAttribute('open',true);
+		console.log(e.hasAttribute('open'))
+	  })
+}
+function close_details() {
+	document.body.querySelectorAll('details')
+	  .forEach((e) => {(e.hasAttribute('open')) ?
+		e.removeAttribute('open')  : e.removeAttribute('open') ;
+		console.log(e.hasAttribute('open'))
+	  })
+}
+</script>
+
+<header id="app-header"></header> <script async src="header.js"></script>  
+
+<p>This will be the about section.</p>
+
+</body>
+</html>
