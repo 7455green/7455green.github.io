@@ -28,15 +28,18 @@ body {
 
 .header {
 	background: White;
+	anchor-name: --header;
 	background: linear-gradient(0deg,SkyBlue 0%,White 50%, DodgerBlue 100%);
 	padding: 20px;
 	margin-bottom: 10px;
 }
 
-.header img {  
+.header img { 
   margin-left: 35%;
-  width: 150px;
-  height: 150px;
+  position-anchor: --header;
+  width: 10%;
+  height: auto;
+  aspect-ratio:1;
   vertical-align: text-bottom;
   display: inline-block
 
@@ -44,6 +47,7 @@ body {
 
 .header h1 {
 	position: absolute;
+	position-anchor: --header;
 	top: 60px;
 	left: 45%;
 	text-align: left;
@@ -52,6 +56,7 @@ body {
 
 .header p {
 	position: absolute;
+	position-anchor: --header;
 	top: 120px;
 	left: 46%;
 	color: RoyalBlue;
