@@ -48,7 +48,7 @@ body {
 .header h1 {
 	position: absolute;
 	position-anchor: --header;
-	top: 60px;
+	top: 8%;
 	left: 45%;
 	text-align: left;
 	margin: 0px
@@ -57,7 +57,7 @@ body {
 .header p {
 	position: absolute;
 	position-anchor: --header;
-	top: 120px;
+	top: 14%;
 	left: 46%;
 	color: RoyalBlue;
 	margin: 0px
