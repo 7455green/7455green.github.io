@@ -118,6 +118,10 @@ body {
   cursor: pointer;	
 }
 
+.in_sim_button:hover {
+  background-color: Coral;
+}
+
 .ex_col_button {
   background-color: Tomato;
   font-family:Verdana;
@@ -129,6 +133,10 @@ body {
   border: none;
   border-radius: 2px;
   cursor: pointer;	
+}
+
+.ex_col_button:hover {
+  background-color: Coral;
 }
 
 details {
@@ -144,6 +152,10 @@ summary {
   cursor: pointer;	
 }
 
+summary:hover{
+	background-color: WhiteSmoke;
+}
+
 details[open] {
   background-color:WhiteSmoke;
   border-style: solid;
@@ -155,5 +167,8 @@ details[open] summary {
   background-color:Tomato;
   margin-bottom: 0.5em;
   cursor: pointer;	
-  
+}
+
+details[open] summary:hover {
+  background-color:Coral;
 }
