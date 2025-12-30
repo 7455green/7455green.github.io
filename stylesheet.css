@@ -31,7 +31,7 @@ body {
 .header {
 	background: White;
 	anchor-name: --header;
-	background: linear-gradient(0deg,SkyBlue 0%,White 50%, DodgerBlue 100%);
+	background: linear-gradient(0deg,Green 0%,White 50%, RoyalBlue 100%);
 	padding-top: 20px;
 	margin: 0px;
 }
@@ -62,7 +62,7 @@ body {
 }
 
 .header_buttons {
-	background: SkyBlue;
+	background: Black;
 	padding: 0px;
 	padding-bottom: 2px;
 	display: flex;
@@ -70,7 +70,6 @@ body {
 }
 
 .main_button {
-  background-color: SteelBlue;
   font-family:Verdana;
   font-weight: Bold;
   color: Black;
@@ -83,9 +82,6 @@ body {
   border: none;
   border-radius: 2px;
   cursor: pointer;	
-}
-.main_button:hover {
-  background-color: RoyalBlue;
 }
 
 .container {
@@ -106,7 +102,6 @@ body {
 }
 
 .in_sim_button {
-  background-color: Tomato;
   font-family:Verdana;
   font-weight: Bold;
   color: Black;
@@ -116,14 +111,9 @@ body {
   border: none;
   border-radius: 2px;
   cursor: pointer;	
-}
-
-.in_sim_button:hover {
-  background-color: Coral;
 }
 
 .ex_col_button {
-  background-color: Tomato;
   font-family:Verdana;
   font-weight: Bold;
   color: Black;
@@ -135,9 +125,6 @@ body {
   cursor: pointer;	
 }
 
-.ex_col_button:hover {
-  background-color: Coral;
-}
 
 details {
   font-family:verdana;
@@ -148,27 +135,39 @@ summary {
   font-weight: bold;
   font-family:verdana;
   padding: 0.5em;
-  background-color:Gainsboro;
   cursor: pointer;	
 }
 
-summary:hover{
-	background-color: WhiteSmoke;
-}
-
 details[open] {
-  background-color:WhiteSmoke;
   border-style: solid;
-  border-color: FireBrick;
   border-width:2px;
 }
 details[open] summary {
   border-bottom: 1px solid #aaaaaa;
-  background-color:Tomato;
   margin-bottom: 0.5em;
   cursor: pointer;	
 }
 
-details[open] summary:hover {
-  background-color:Coral;
+
+.main_button {
+  background-color: RoyalBlue;
+}
+.main_button:hover {
+  background-color: DodgerBlue;
+}
+details[open] {
+  border-color: FireBrick;	
+  background-color:WhiteSmoke;
+}
+details[open] summary, .ex_col_button, .in_sim_button {
+  background-color:Tomato;	
+}
+details[open] summary:hover, .ex_col_button:hover, .in_sim_button:hover {
+  background-color: Coral;
+}
+summary {
+	background-color:Gainsboro;	
+}
+summary:hover{
+	background-color: WhiteSmoke;
 }
