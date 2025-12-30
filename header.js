@@ -18,11 +18,11 @@ myCanvas.height = window.innerWidth/1000*100;
 const c = document.getElementById("myCanvas");
 const ctx = c.getContext("2d");
 ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--header_color1');
-ctx.fillRect(0, 0, myCanvas.width, myCanvas.height/3); 
+ctx.fillRect(0, 0, myCanvas.width, myCanvas.height/5); 
 ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--header_color2');
-ctx.fillRect(0, myCanvas.height/3, myCanvas.width, myCanvas.height*2/3); 
+ctx.fillRect(0, myCanvas.height/5, myCanvas.width, myCanvas.height*4/5); 
 ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--header_color3');
-ctx.fillRect(0, myCanvas.height*2/3, myCanvas.width, myCanvas.height); 
+ctx.fillRect(0, myCanvas.height*4/5, myCanvas.width, myCanvas.height); 
 
 var image2 = document.createElement("img");
 
