@@ -20,11 +20,25 @@ function resize_sim() {
 		  canvas3.style.height = "720px"
 		}
 	}
-
-	const canvas2 = document.getElementById("myCanvas")
 	myCanvas.width = window.innerWidth;
-	myCanvas.height = window.innerWidth/1000*100;
-	
+	myCanvas.height = window.innerWidth/1000*100;	
+	const c = document.getElementById("myCanvas");
+	const ctx = c.getContext("2d");
+	ctx.clearRect(0,0,myCanvas.width,myCanvas.height);
+	ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--header_color1');
+	ctx.fillRect(0, 0, myCanvas.width, myCanvas.height/5); 
+	ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--header_color2');
+	ctx.fillRect(0, myCanvas.height/5, myCanvas.width, myCanvas.height*4/5); 
+	ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--header_color3');
+	ctx.fillRect(0, myCanvas.height*4/5, myCanvas.width, myCanvas.height); 
+
+	var image2 = document.createElement("img");
+
+	image2.onload = function () {
+		ctx.drawImage(image2,myCanvas.width/3.5,0,myCanvas.width/2.5,myCanvas.width/10);
+	}
+	image2.src = '/web_logo_text.png';
+		
 }
 
 function resize_sim_full() {
