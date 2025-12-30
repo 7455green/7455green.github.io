@@ -19,7 +19,12 @@ function resize_sim() {
 		  canvas3.style.width = "1280px"
 		  canvas3.style.height = "720px"
 		}
-	}			
+	}
+
+	const canvas2 = document.getElementById("myCanvas")
+	myCanvas.width = window.innerWidth;
+	myCanvas.height = window.innerWidth/1000*100;
+	
 }
 
 function resize_sim_full() {
