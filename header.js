@@ -28,5 +28,5 @@ image2.onload = function () {
 }
 image2.src = '/web_logo_text.png';
 
-c.style.width = window.innerWidth+"px";
-c.style.height = window.innerWidth/10+"px";
+c.style.width = window.clientWidth+"px";
+c.style.height = window.clientWidth/10+"px";

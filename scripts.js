@@ -21,8 +21,8 @@ function resize_sim() {
 		}
 	}
 	const c = document.getElementById("myCanvas");
-	c.style.width = window.innerWidth+"px";
-	c.style.height = window.innerWidth/10+"px";
+	c.style.width = window.clientWidth+"px";
+	c.style.height = window.clientWidth/10+"px";
 }
 
 function resize_sim_full() {
@@ -40,6 +40,6 @@ function resize_sim_full() {
 
 function resize_menu() {
 	const c = document.getElementById("myCanvas");
-	c.style.width = window.innerWidth+"px";
-	c.style.height = window.innerWidth/10+"px";
+	c.style.width = window.clientWidth+"px";
+	c.style.height = window.clientWidth/10+"px";
 }
