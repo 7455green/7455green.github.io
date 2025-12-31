@@ -98,7 +98,7 @@
 	
 	<h2> Forces on a car</h2>
 
-    <body onload = resize_sim() onresize = resize_sim()>
+    <body onresize = resize_sim()>
         <!-- Custom BodyStart code is injected here -->
 
         <div class="gm4html5_div_class" id="gm4html5_div_id">
@@ -110,7 +110,7 @@
             
 
             <!-- Create the canvas element the game draws to -->
-            <canvas id="canvas" width="1280" height="720" >
+            <canvas id="canvas" width="1280" height="720" onload = resize_sim()>
                 
                 <p>Your browser doesn't support HTML5 canvas.</p>
             </canvas>
