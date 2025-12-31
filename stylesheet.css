@@ -13,6 +13,7 @@
   --header_color2: White;
   --header_color3: #C1292E;
   --main_button_banner_color:#161925;
+  --h2_color:#C1292E;
   
   --number_columns: round(calc(0.2vw/1px))
   
@@ -37,7 +38,7 @@ a {
 font-family:verdana
 }
 h2 {
-background-color:Tomato;
+background-color:var(--h2_color);
 color: Black;
 font-family:verdana;
 padding: 5px;
