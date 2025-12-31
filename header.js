@@ -25,8 +25,10 @@ var image2 = document.createElement("img");
 
 image2.onload = function () {
     ctx.drawImage(image2,myCanvas.width/3.5,0,myCanvas.width/2.5,myCanvas.width/10);
+	c.style.width = document.body.clientWidth+"px";
+	c.style.height = document.body.clientWidth/10+"px";
 }
 image2.src = '/web_logo_text.png';
 
-c.style.width = window.clientWidth+"px";
-c.style.height = window.clientWidth/10+"px";
+c.style.width = document.body.clientWidth+"px";
+c.style.height = document.body.clientWidth/10+"px";
