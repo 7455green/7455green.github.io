@@ -110,7 +110,7 @@
             
 
             <!-- Create the canvas element the game draws to -->
-            <canvas id="canvas" width="1280" height="720" onload = resize_sim()>
+            <canvas id="canvas" width="1280" height="720">
                 
                 <p>Your browser doesn't support HTML5 canvas.</p>
             </canvas>
@@ -129,7 +129,10 @@
         <!-- Builtin injector for injecting runner path -->
         
 
-        <script>window.onload = GameMaker_Init;</script>
+        <script>
+		window.onload = GameMaker_Init;
+		window.onload = resize_sim();
+		</script>
 
         <!-- Builtin injector for injecting google analytics code -->
         
