@@ -30,5 +30,8 @@ image2.onload = function () {
 }
 image2.src = '/web_logo_text.png';
 
-c.style.width = document.body.clientWidth+"px";
-c.style.height = document.body.clientWidth/10+"px";
+window.onload = function () {
+  c.style.width = document.body.clientWidth+"px";
+  c.style.height = document.body.clientWidth/10+"px";
+}
+
