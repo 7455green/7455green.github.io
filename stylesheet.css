@@ -13,6 +13,9 @@
   --header_color2: White;
   --header_color3: #C1292E;
   --main_button_banner_color:#161925;
+  
+  --number_columns: round(calc(0.2vw/1px))
+  
 }
 
 canvas {
@@ -125,6 +128,7 @@ body {
   font-size: 16px;
   text-align: center;
 }
+
 .icons {
   height: 180px;
   width: 320px;
