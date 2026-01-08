@@ -31,7 +31,7 @@ ctx.lineWidth = 8;
 ctx.strokeStyle = getComputedStyle(document.documentElement).getPropertyValue('--header_color_title_ol');
 ctx.strokeText("Physics interactives for teaching.",1330,225);
 ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--header_color_title');
-ctx.fillText("Physics interactives for teaching.",1330,225);
+ctx.fillText("Physics interactives for teaching",1330,225);
 
 var image2 = document.createElement("img");
 
