@@ -9,7 +9,7 @@
 		<script src="../scripts.js"></script>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name ="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <meta name ="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta charset="utf-8"/>
 
@@ -29,7 +29,6 @@
                 color: #cccccc;
                 margin: 0px;
                 padding: 0px;                
-				margin-bottom: 60px;
                 border: 0px;
             }
 
@@ -39,9 +38,9 @@
                 -ms-touch-action: none;
                 touch-action: none;
                 margin: auto;
-				width: auto;
                 padding: 0px;
                 border: 0px;
+				width: auto;
 				text-align: center;
 				display:block;
             }
@@ -95,15 +94,8 @@
     <!-- Custom PreBody code is injected here -->
     
 
-    <body onresize = resize_sim()>
-		<div id="myHeader"></div><script src="/header.js"></script>  
-		
-		<input type="button" class = "in_sim_button" onclick="location.href='fullscreen.html';" value="Fullscreen Sim" />   
-	
-		<h2>Gas pressure in a container</h2>
+    <body onresize = resize_sim_full() style = "background-color:Black">
         <!-- Custom BodyStart code is injected here -->
-        
-
         <div class="gm4html5_div_class" id="gm4html5_div_id">
             
             <!-- Builtin injector for splash screen -->
@@ -113,7 +105,7 @@
             
 
             <!-- Create the canvas element the game draws to -->
-            <canvas id="canvas" width="1280" height="720" style = "border:2px">
+            <canvas id="canvas" width="1280" height="720" >
                 
                 <p>Your browser doesn't support HTML5 canvas.</p>
             </canvas>
@@ -121,9 +113,9 @@
             <!-- Custom PostCanvas code is injected here -->
             
         </div>
-
+		
 		<script>
-		resize_sim()
+		resize_sim_full()
 		</script>
 
         <!-- Run the game code -->
@@ -138,7 +130,7 @@
         
 
         <!-- Custom BodyEnd code is injected here -->
-	<div id="myFooter"></div><script src="/footer.js"></script>           
+        
     </body>
 
     <!-- Custom PostBody code is injected here -->
