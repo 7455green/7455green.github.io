@@ -1,5 +1,5 @@
 :root {
-  --main_button_color: #235789;
+  --main_button_color: #2E86AB;
   --main_button_color_hl: SkyBlue;
   --in_page_button_color: #C1292E;
   --in_page_button_color_hl:Coral;
@@ -9,11 +9,13 @@
   --summary_open_color_hl: Coral;
   --summary_color: Gainsboro;
   --summary_color_hl: WhiteSmoke;
-  --header_color1: #235789;
-  --header_color2: White;
+  --header_color1: #2E86AB;
+  --header_color2: #273043;
   --header_color3: #C1292E;
   --main_button_banner_color:#161925;
   --h2_color:#C1292E;
+  --header_color_title: #161925;
+  --header_color_title_ol: WhiteSmoke;
   
   --number_columns: round(calc(0.2vw/1px))
   

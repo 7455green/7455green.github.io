@@ -19,16 +19,28 @@ ctx.fillRect(0, 0, myCanvas.width, myCanvas.height/5);
 ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--header_color2');
 ctx.fillRect(0, myCanvas.height/5, myCanvas.width, myCanvas.height*4/5); 
 ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--header_color3');
-ctx.fillRect(0, myCanvas.height*4/5, myCanvas.width, myCanvas.height); 
+ctx.fillRect(0, myCanvas.height*4/5, myCanvas.width, myCanvas.height);
+ctx.font = "expanded bold 120px Arial Rounded MT";
+ctx.lineWidth = 8;
+ctx.strokeStyle = getComputedStyle(document.documentElement).getPropertyValue('--header_color_title_ol');
+ctx.strokeText("View-Physics",1300,170);
+ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--header_color_title');
+ctx.fillText("View-Physics",1300,170);
+ctx.font = "40px Arial Rounded MT";
+ctx.lineWidth = 8;
+ctx.strokeStyle = getComputedStyle(document.documentElement).getPropertyValue('--header_color_title_ol');
+ctx.strokeText("Physics interactives for teaching.",1330,225);
+ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--header_color_title');
+ctx.fillText("Physics interactives for teaching.",1330,225);
 
 var image2 = document.createElement("img");
 
 image2.onload = function () {
-    ctx.drawImage(image2,myCanvas.width/3.5,0,myCanvas.width/2.5,myCanvas.width/10);
+    ctx.drawImage(image2,myCanvas.width/3,0,myCanvas.width/10,myCanvas.width/10);
 	c.style.width = document.body.clientWidth+"px";
 	c.style.height = document.body.clientWidth/10+"px";
 }
-image2.src = '/web_logo_text.png';
+image2.src = '/web_logo.png';
 
 window.onload = function () {
   c.style.width = document.body.clientWidth+"px";
