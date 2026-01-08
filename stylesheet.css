@@ -183,7 +183,7 @@ summary:hover{
 
 details[open] {
   border-style: solid;
-  border-width:2px;
+  border-width:0px;
 }
 details[open] summary {
   border-bottom: 1px solid #aaaaaa;
