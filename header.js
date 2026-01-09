@@ -7,6 +7,7 @@ let headercontent = `
 		  <button class = "main_button" onclick="location.href='/index.html';" >Simulations</button>
 		  <button class = "main_button" onclick="location.href='/index_edexcel.html';" >Simulations (Edexcel sorted)</button>
 		  <button class = "main_button" onclick="location.href='/about.html';">About</button>
+		  <p style = "color:WhiteSmoke; display:inline-block; margin-left:20px;">   Site is currently under construction.</p>
 		</div>
     </nav>
 `;
